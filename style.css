@@ -2,14 +2,16 @@ body {
     background-image: linear-gradient(#1a56b9, #67a4db);
 }
 
-section {
+p.section {
     height: 100vh;
     justify-content: center;
     text-align: center;
     color: white;
     font-family: Arial;
 }
-form {
+
+.maillink {
+    color: white;
 }
 
 input[type=text], input[type=submit] {
