@@ -7,10 +7,11 @@ html, body {
   display: none;
   justify-content: center;
   align-content: center;
-  height: 98%;
+  height: 95%;
   width: 100%;
   position: fixed;
   top: 20px;
+  bottom: 30px;
 }
 
 .imageLightbox img {
@@ -19,7 +20,10 @@ html, body {
 }
 
 body {
-    background-image: linear-gradient(#1a56b9, #67a4db);
+    background-image: url("billeder/sky baggrund.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
 }
 
 .section {
