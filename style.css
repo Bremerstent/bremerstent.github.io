@@ -26,16 +26,74 @@ body {
     background-position: center center; 
 }
 
-.section {
-    height: 100vh;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
 .maillink {
     text-decoration: none;
 }
+  .maillink:hover {
+    text-decoration: underline;
+  }
+
+.LH {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: -9px;
+  margin-top: 16px;
+}
+
+.menu {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: -9px;
+  margin-top: 16px;
+}
+  .menu:active {
+    text-decoration: line-through;
+  }
+
+  .menu:hover {
+    color: #a0c1ea;
+  }
+
+  .menu:link {
+    text-decoration: none;
+  }
+
+  .menu:visited {
+    text-decoration: none;
+  }
+
+.instagram{
+  color: white;
+  list-style-type: none;
+  text-decoration: underline;
+  margin-left: -9px;
+  font-size: 14px;
+  }
+
+  .instagram:hover{ 
+    color:blue; 
+  }
+
+.container { 
+  position:absolute;
+  top:15%;
+  left:18%;
+  color: white;
+  width: 620px 
+}
+
+.logo {
+  width: 40%;
+  position:relative;
+  left: 33%;
+  padding: 35px;
+}
+  
+
 
 input[type=text], input[type=submit] {
   width: 18%;
