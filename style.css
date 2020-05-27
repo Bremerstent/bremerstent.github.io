@@ -56,10 +56,6 @@ body {
   font-size: 12px;
 }
 
-  .menu li a:hover {
-    text-decoration: line-through;
-  }
-
   .menu:link {
     text-decoration: none;
   }
