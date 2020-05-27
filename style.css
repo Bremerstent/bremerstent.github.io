@@ -36,30 +36,28 @@ body {
   }
 
 .LH {
-  color: white;
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 13px;
-  margin-left: -9px;
+  left: 9px;
+  top: 9px;
+  position: fixed;
 }
 
 .menu {
   list-style-type: none;
-  margin-left: -9px;
-  margin-top: 16px;
-  position: fixed; 
+  left: -23px;
+  top: 57px;
+  position: fixed;
 }
 
 .menu li a { 
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
+  line-height: 1.5;
   color: white;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 12px;
 }
 
-  .menu:hover {
-    color: #a0c1ea;
+  .menu li a:hover {
+    text-decoration: line-through;
   }
 
   .menu:link {
@@ -71,15 +69,11 @@ body {
   }
 
 .instagram{
-  color: white;
-  list-style-type: none;
-  text-decoration: underline;
-  margin-left: -9px;
-  font-size: 13px;
+  text-decoration: underline !important;
   }
 
   .instagram:hover{ 
-    color:blue; 
+    color:blue !important; 
   }
 
 .container {
@@ -92,11 +86,28 @@ body {
 }
 
 .logo {
-  width: 26%;
+  width: 32%;
   position:absolute;  
-  left: 42%;
-  top: 39%;
-}  
+  left: 44%;
+  top: 43%;
+}
+
+.container2 {
+  line-height: 1.5; 
+  position:absolute;
+  top:15%;
+  left:18%;
+  color: white;
+  width: 620px;  
+}
+
+.email {
+  width: 25%;
+  padding: 4px;
+  font-size
+  
+}
+  
 
 input[type=text], input[type=submit] {
   width: 18%;
