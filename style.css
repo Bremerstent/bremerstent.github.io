@@ -79,13 +79,14 @@ body {
   left:18%;
   color: white;
   width: 620px;
+  font-size: 14px;
 }
 
 .logo {
-  width: 32%;
+  width: 43%;
   position:absolute;  
-  left: 44%;
-  top: 43%;
+  left: 37%;
+  top: 33%;
 }
 
 .container2 {
@@ -94,7 +95,8 @@ body {
   top:15%;
   left:18%;
   color: white;
-  width: 620px;  
+  width: 620px;
+  font-size: 14px;  
 }
 
 .email {
