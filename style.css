@@ -110,15 +110,11 @@ input[type=text], input[type=submit] {
   padding: 6px;
   margin: 4px 0;
   display: inline-block;
-  border: 1px solid #ccc;
   box-sizing: border-box;-box;
-
-}
-
-input[type=submit] {
   background-color: #4CAF50;
   color: white;
   border: none;
+
 }
 
 input[type=submit]:hover {
