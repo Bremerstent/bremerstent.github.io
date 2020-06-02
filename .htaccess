@@ -1,0 +1,5 @@
+#Rewrite to domain with www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^(.+\.)([a-zA-Z0-9-]+\.([a-z]{2,4})|co\.uk|me\.uk|org\.uk|priv\.no)$
+RewriteCond %{HTTP_HOST} ([a-zA-Z0-9-]+\.([a-z]{2,4})|co\.uk|me\.uk|org\.uk|priv\.no)$
+RewriteRule ^(.*)$ https://www.%1/$1 [L,QSA,R=301]
