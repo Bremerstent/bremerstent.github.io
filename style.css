@@ -2,8 +2,26 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
 }
+
+@media only screen and (max-width: 700px) {
+  body:after {
+    content: "Please use a bigger screen than 700 pixel to enter the gallery";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed; /* could also be absolute */ 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(255,255,255,1);
+  }
+}
+
 .imageLightbox {
   display: none;
   justify-content: center;
@@ -13,7 +31,7 @@ html, body {
   position: fixed;
   top: 0px;
   bottom: 0px;
-  background:rgba(255,255,255, 0.6)
+  background: rgba(255,255,255, 0.6)
 }
 
 .imageLightbox img {
