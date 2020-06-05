@@ -5,6 +5,25 @@ html, body {
     min-height: 100%;
 }
 
+@media only screen and (max-width: 700px) {
+  body:after {
+    content: "Please use a bigger screen than 700 pixel to enter the gallery";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed; /* could also be absolute */ 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    background-color: none;
+    background: linear-gradient(0deg, rgba(106,166,219,1) 0%, rgba(25,85,184,1) 100%);
+  }
+}
+
 .imageLightbox {
   display: none;
   justify-content: center;
@@ -76,7 +95,7 @@ body {
 .container {
   line-height: 200%; 
   position:absolute;
-  top:15%;
+  top:13%;
   left:18%;
   color: white;
   width: 620px;
@@ -116,11 +135,13 @@ body {
 .textart {
   line-height: 1.5; 
   position:absolute;
-  top:8%;
-  left:73%;
-  color: white;
+  top:3%;
+  left:72%;
   width: 320px;
-  font-size: 14px;  
+  font-size: 14px;
+  padding: 5px;
+  color: white; 
+  background-color: rgba(255,255,255, 0.1);    
 }
 }
 
