@@ -127,8 +127,20 @@ body {
   width: 65%;
   position:absolute;
   top: 20px; 
-  left: 180px;
+  left: 105px;
 }
+
+.textart {
+  line-height: 1.5; 
+  position:absolute;
+  top:8%;
+  left:73%;
+  color: white;
+  width: 320px;
+  font-size: 14px;  
+}
+}
+
 
   
 
