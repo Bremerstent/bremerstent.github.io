@@ -4,3 +4,6 @@ RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} !^(.+\.)([a-zA-Z0-9-]+\.([a-z]{2,4})|co\.uk|me\.uk|org\.uk|priv\.no)$
 RewriteCond %{HTTP_HOST} ([a-zA-Z0-9-]+\.([a-z]{2,4})|co\.uk|me\.uk|org\.uk|priv\.no)$
 RewriteRule ^(.*)$ https://www.%1/$1 [L,QSA,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
