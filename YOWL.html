@@ -21,12 +21,23 @@
         $href = e.currentTarget.getAttribute("xlink:href")
         jQuery(".imageLightbox").fadeIn(399);
         jQuery(".imageLightbox").css("display", "flex");
-
-        jQuery(".imageLightbox").html('<img src="' + $href + '"/>');
+        // IF VIDEO
+        $file_array = $href.split(".");
+        if( $file_array[$file_array.length-1] == 'mp4' ) {
+          jQuery(".imageLightbox").html(`
+            <video width="320" height="240" controls>
+            <source src="${$href}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video> 
+          `);
+        } else { 
+        // ELSE IMAGE
+          jQuery(".imageLightbox").html('<img src="' + $href + '"/>');
+        }
         jQuery(".imageLightbox").on("click", function(a) {
           if(a.target == this) { // Only if wrapper parent is clicked
-            debugger;
             jQuery(this).fadeOut(399);
+            jQuery(this).children(['img', 'video']).remove();
           }
         });
       });
