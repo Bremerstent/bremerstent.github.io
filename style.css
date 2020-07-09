@@ -110,14 +110,29 @@ body {
 }
 
 .container2 {
-  line-height: 1.5; 
-  position:absolute;
-  top:15%;
-  left:18%;
-  color: white;
-  width: 620px;
-  font-size: 14px;  
+  box-sizing: border-box;
+  float: left;
+  width: 34%;
+  position: relative;
+  top: 100px;
+  left:170px;
 }
+
+.pasttext {
+  font-size: 14px;
+  color: white;
+  line-height: 1.5;
+  list-style-type: none;
+}
+
+  .pasttext li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .pasttext:hover {
+    text-decoration: none;
+  }
 
 .email {
   width: 25%;
@@ -153,3 +168,11 @@ input[type=text], input[type=submit] {
 input[type=submit]:hover {
   opacity: 0.8;
 }
+
+#yowl {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+
