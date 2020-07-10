@@ -27,7 +27,7 @@ html, body {
 .imageLightbox {
   display: none;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -174,5 +174,11 @@ input[type=submit]:hover {
   z-index: -1;
   width: 100%;
 }
+
+#player {
+ width: 20%;
+ padding-left: 40%;
+ opacity: 20%;
+}​
 
 
