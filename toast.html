@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="billeder/løvelogosort.png">	
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Løvens Hule</title>
-  <meta name = "description=" content = "Løvens Hule is an artist run exhibition space based in Oslo, Norway"/>
-  <!-- JQUERY CDN  -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="billeder/løvelogosort.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script>
-    jQuery(document).ready(function(e) {
-      jQuery(".exh-wrapper a").on("click", function(e) {
-        e.preventDefault(); 
-        $href = e.currentTarget.getAttribute("xlink:href")
-        jQuery(".imageLightbox").fadeIn(399);
-        jQuery(".imageLightbox").css("display", "flex");
+<style type="text/css"> 
+  body { 
+    background-image: none;
+    background: linear-gradient(0deg, rgba(106,166,219,1) 0%, rgba(25,85,184,1) 100%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
-        jQuery(".imageLightbox").html('<img src="' + $href + '"/>');
-        jQuery(".imageLightbox").on("click", function(a) {
-          if(a.target == this) { // Only if wrapper parent is clicked
-            debugger;
-            jQuery(this).fadeOut(399);
-          }
-        });
-      });
-    });
-  </script> 
+</style>
 </head>
 
 <body>
-  <div class="imageLightbox">
-  </div>
-
-<div>
+    <div>
     <div class="LH">
     <a href="index.html">
         <img src="billeder/løvelogohvid.png" alt="Løvens Hule" style="width:80px;">
@@ -41,41 +29,51 @@
     <li><a href="index.html" style="font-family: Baskerville; font-size: 17px">Løvens Hule</a></li>
     <br>
     <li><a href="index">Current</a></li>
-    <li><a href="past exhibitions">Past exhibitions</a></li>
+    <li><a href="exhibitions">Exhibitions</a></li>
     <li><a href="rateart">RateArt</a></li>
     <li><a href="about">About</a></li>
     <br>
     <li><a class="instagram" href="https://www.instagram.com/loevenshule.gallery/" target="_blank">Instagram</a></li>
   </ul>
 </div>
+      
+      <div class="container">
+          Anna Sofie Mathiasen & Espen Kvålsvoll
+            <br>
+          TOAST
+            <hr>
+            <br>
+          De 12 måneder á 30 dage var gået, og i nat startede de 5 festdage*. I tågen var de døvstummestjerner blevet usynlige, og det føltes som umuligt ikke at snuble. SLAM. Der lyste du tågen op med et smukt ansigt stående på en drage, med horn på dit hoved, med to slanger viklet omkring dig. En slange var viklet omkring hver af dine arme, og over dit hoved var en drage, og en anden drage under dine fødder, hver af disse drager havde syv hoveder. På himlen svingninger månen fra ingenting ved nymåne til en stor skive ved fuldmåne. Her starter festen og vi spiser og skåler.
+            <br><br>
+          Der er en teori at hvis et billede af Månen placeres på et bord, ville dette billede være mere virkeligt end Månen på himlen. Forklaring er, at den sansende Måne er en ringere materialiseret udgave af den virkelige formløse Måne. Et sådant billede skaber nemlig en direkte kontakt til Månen opfattet som en kosmisk energiform.  
+            <br><br>
+          Fuldmånen er et centralt element i hver af Anna Sofie Mathiasen og Espen Kvålsvolls billeder, hvor det i begge tilfælde er en form for lyskilde. I Carriers reflekterer bladsølvet i månen det udefrakommende lys, mens det dramatiske lysspil i Beaming, udspiller sig fra månen, der reflektere lyset hvilket forårsager at følelser og stemninger vokser.
+            <br><br>
+          -Thomas Bremerstent
+            <br><br>
+          <p style="font-size:12px">*Et Ægyptisk år; en tidlig form for sol-kalender bestående af 12 måneder á 30 dage plus 5 festdage. Altså 265 dage i alt, den eneste simple sol-kalender der er mulig.</p>
+            <hr><br>
+          Anna Sofie Mathiasen (b. 1995, Copenhagen) lives and works in Oslo. She is currently studying at Oslo National Academy of the Arts / Academy of Fine Art and will complete her MFA in 2020. Recent exhibitions include Kunstnernes Hus (Oslo), RAM Galleri (Oslo) and Sol (Nexø, DK).
+            <br><br>
+          Espen Kvålsvoll (b. 1992, Trondheim) lives and works in Oslo. He completed his MFA at Oslo National Academy of the Arts / Academy of Fine Art in 2019. Previous exhibitions include LNM (Oslo) and NoPlace (Oslo).
+          <br><br>
+          <hr>
+          <br>
+          <img style="width: 100%;" src="billeder/toast/galleri2.png">
+          <br> <hr> <br> <br>
+          <img src="billeder/toast/espen.jpg">
+          <p style="line-height: 1; font-size: 12px; padding-left:47px"> Beaming<br>Espen Kvålsvoll <br> 2020 <br><br> Rabbitglue, pigment, gouache and oil on linen. <br>175x120cm</p>
+          <br><hr><br><br>
+          <img src="billeder/toast/anna.jpg">
+          <p style="line-height: 1; font-size: 12px; padding-left:47px"> Carriers <br> Anna Sofie Mathiasen <br> 2020 <br><br> Wallpaper, silver leaf, mounted on poplar veneer</p>
+          <br><hr><br>
+          
+     </div> 
+      
 
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<div class="exh-wrapper">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:grey;fill-opacity:0.0}
-    .st0:hover{fill:#3F7CCB;fill-opacity:0.3}
-</style>
-<image style="overflow:visible;" width="6016" height="4000" id="XMLID_7_" xlink:href="billeder/toast/galleri.png"  transform="matrix(0.3053 0 0 0.3053 22.5319 -70.684)">
-</image>
-<a xlink:href="billeder/toast/presse.jpg" >
-	<rect id="XMLID_1_" x="1609.1" y="263.7" class="st0" width="60.9" height="86.6"/>
-</a>
-<a xlink:href="billeder/toast/plan.jpg" >
-	<rect id="XMLID_2_" x="1609.1" y="367.6" class="st0" width="60.9" height="86.6"/>
-</a>
-<a xlink:href="billeder/toast/espen.jpg" >
-	<polygon id="XMLID_3_" class="st0" points="1065,607.8 1361,626.4 1361,156.7 1065,185.4 	"/>
-</a>
-<a xlink:href="billeder/toast/anna.jpg" >
-	<polygon id="XMLID_4_" class="st0" points="561.7,637.3 817,607.6 817,188.2 561.5,163.6 	"/>
-</a>
-</svg>
-</div>
 
 
-</body>
+
+
+    </body>
 </html>
-

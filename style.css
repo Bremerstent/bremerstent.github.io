@@ -101,6 +101,13 @@ body {
   width: 620px;
   font-size: 14px;
 }
+  
+  .container img {
+    width: 85%;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+  }
 
 .logo {
   width: 43%;
@@ -181,4 +188,6 @@ input[type=submit]:hover {
  opacity: 20%;
 }​
 
-
+.doc_img {
+  width: 100%;
+}
