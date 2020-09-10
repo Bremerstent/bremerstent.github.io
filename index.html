@@ -4,73 +4,28 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" type="image/png" href="billeder/løvelogosort.png">	
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description=" content = "Løvens Hule is an artist run exhibition space based in Oslo, Norway"/>
   <title>Løvens Hule</title>
-    <style type="text/css"> 
-  body { 
-  background-image: none;
-  background: rgba(102,165,216,1);
-  }
-  </style>
-
-</script>
-
+  <meta name = "description=" content = "Løvens Hule is an artist run exhibition space based in Oslo, Norway"/>
   <!-- JQUERY CDN  -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script>
     jQuery(document).ready(function(e) {
-      // IF AUDIO - PLAY IT ON START
-      // You have to set the class of it-audio-auto-play on the audio HTML-tag for this to work
-      if( $(".it-audio-auto-play").length > 0 ) {
-          $('.it-audio-auto-play').each(function(){
-              this.play(); 
-          }); 
-      }
-        
-      // SHOW LIGHTBOX 
       jQuery(".exh-wrapper a").on("click", function(e) {
         e.preventDefault(); 
-        // IF ANY AUDIO STOP IT
-        if( $('audio').length > 0 ) {
-          $('audio').each(function(){
-              this.pause(); 
-          }); 
-        }
         $href = e.currentTarget.getAttribute("xlink:href")
         jQuery(".imageLightbox").fadeIn(399);
         jQuery(".imageLightbox").css("display", "flex");
-        // IF VIDEO
-        $file_array = $href.split(".");
-        if( $file_array[$file_array.length-1] == 'mp4' ) { // ONLY MP4 format
-          jQuery(".imageLightbox").html(`
-            <video width="800" height="450" controls>
-            <source src="${$href}" type="video/mp4">
-            Your browser does not support the video tag.
-            </video> 
-          `);
-        } else { 
-        // ELSE IMAGE
-          jQuery(".imageLightbox").html('<img src="' + $href + '"/>');
-        }
-        
-        // REMOVE LIGHTBOX
+
+        jQuery(".imageLightbox").html('<img src="' + $href + '"/>');
         jQuery(".imageLightbox").on("click", function(a) {
-          // IF ANY AUDIO START IT AGAIN
-          if( $('audio').length > 0 ) {
-            $('audio').each(function(){
-                this.play(); 
-            }); 
-          }
-          
           if(a.target == this) { // Only if wrapper parent is clicked
+            debugger;
             jQuery(this).fadeOut(399);
-            jQuery(this).children(['img', 'video']).remove();
           }
         });
       });
     });
   </script> 
-
 </head>
 
 <body>
@@ -83,6 +38,7 @@
         <img src="billeder/løvelogohvid.png" alt="Løvens Hule" style="width:80px;">
         </a></div>
   <ul class="menu">
+    </li>
     <li><a href="index.html" style="font-family: Baskerville; font-size: 17px">Løvens Hule</a></li>
     <br>
     <li><a href="index">Current</a></li>
@@ -94,49 +50,19 @@
   </ul>
 </div>
 
-
-
-<video autoplay muted loop id="yowl">
-  <source src="billeder/toc/prøvekd.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-  
-<!-- I REMOVED THIS - IT PLAYS DOUBLE -->
-<!-- <iframe src="billeder/yowl/YOWLlyd.mp3" type=”audio/mp3″ allow="autoplay" id="audio" style="display: none"></iframe> --> 
-
-<audio id="player" class="it-audio-auto-play" loop>
-    <source src="billeder/toc/dirkjanlyd.mp3" type="audio/mp3">
-</audio>
-
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<div class="exh-wrapper">
+<div>
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 1920 1080" style="" xml:space="preserve">
-<style type="text/css">
-  .st0{fill:grey;fill-opacity:0.0}
-    .st0:hover{fill:#3F7CCB;fill-opacity:0.3}
-</style>
-</style>
-  <a xlink:href="billeder/toc/kimvideo.mp4" >
-  <polygon class="st0" points="598.9,420.3 795.6,411.3 798.5,283.6 597,274.5  "/>
-</a>
-<a xlink:href="billeder/toc/presse.jpg" >
-  <rect x="1614" y="244.8" class="st0" width="62.4" height="87.9"/>
-</a>
-<a xlink:href="billeder/toc/plan.jpg" >
-  <rect x="1613.9" y="348.8" class="st0" width="62.4" height="87.9"/>
-</a>
-<a xlink:href="billeder/toc/dirkjanvideo.mp4" >
-  <polygon class="st0" points="1023.3,460.2 1407.9,489.4 1407.9,202 1025.4,231  "/>
-</a>
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+
+<image style="overflow:visible;" width="6016" height="4000" id="XMLID_7_" xlink:href="billeder/frederik/plakat.png"  transform="matrix(0.3053 0 0 0.3053 22.5319 -70.684)">
+</image>
+
 </svg>
-
-
 </div>
 
 
 </body>
 </html>
-
 
