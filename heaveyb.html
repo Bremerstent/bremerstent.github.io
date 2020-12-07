@@ -44,21 +44,18 @@ img {vertical-align: middle;}
   max-width: 1920px;
   position: absolute;
   margin: auto;
+  z-index: -1;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 20%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
+  color: rgba(0, 0, 0, 0);
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  font-size: 400px;
   user-select: none;
 }
 
@@ -68,31 +65,6 @@ img {vertical-align: middle;}
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -100,9 +72,9 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 3s;
   animation-name: fade;
-  animation-duration: 5s;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes fade {
@@ -115,10 +87,6 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 </style>
 
 <style type="text/css"> 
@@ -141,18 +109,42 @@ img {vertical-align: middle;}
 <div>
     <div class="LH">
     <a href="index.html">
-        <img src="billeder/løvelogohvid.png" alt="Løvens Hule" style="width:80px;">
+        <img src="billeder/løvelogohvid.png" alt="Løvens Hule" style="width:80px; opacity: 0.8;">
         </a></div>
   <ul class="menu">
-    <li><a href="index.html" style="font-family: Baskerville; font-size: 17px">Løvens Hule</a></li>
+    <li><a href="index.html" style="font-family: Baskerville; font-size: 17px; color: rgba(255,255,255,0.8);">Løvens Hule</a></li>
     <br>
-    <li><a href="index">Current</a></li>
-    <li><a href="exhibitions">Exhibitions</a></li>
-    <li><a href="rateart">RateArt</a></li>
-    <li><a href="about">About</a></li>
+    <li><a href="index" style="color: rgba(255,255,255,0.8)">Current</a></li>
+    <li><a href="exhibitions" style="color: rgba(255,255,255,0.8)">Exhibitions</a></li>
+    <li><a href="rateart" style="color: rgba(255,255,255,0.8)">RateArt</a></li>
+    <li><a href="about" style="color: rgba(255,255,255,0.8)">About</a></li>
     <br>
-    <li><a class="instagram" href="https://www.instagram.com/loevenshule.gallery/" target="_blank">Instagram</a></li>
+    <li><a class="instagram" href="https://www.instagram.com/loevenshule.gallery/" target="_blank" style="color: rgba(255,255,255,0.8)">Instagram</a></li>
   </ul>
+</div>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<div style="position: absolute; z-index: 1" class="exh-wrapper">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:grey;fill-opacity:0.0}
+    .st0:hover{fill:#3F7CCB;fill-opacity:0.3}
+</style>
+
+<image style="overflow:visible;" width="6016" height="4000" id="XMLID_7_" xlink:href="billeder/revengeisadish/planpresse.png"  transform="matrix(0.3053 0 0 0.3053 22.5319 -70.684)">
+</image>
+
+<a xlink:href="billeder/revengeisadish/presse.jpg" >
+  <rect id="XMLID_1_" x="1609.1" y="263.7" class="st0" width="60.9" height="86.6"/>
+</a>
+<a xlink:href="billeder/revengeisadish/plan.jpg" >
+  <rect id="XMLID_2_" x="1609.1" y="367.6" class="st0" width="60.9" height="86.6"/>
+</a>
+
+</svg>
 </div>
 
 
@@ -170,16 +162,105 @@ img {vertical-align: middle;}
   <img src="billeder/heaveyblankets/baggrund/03" style="width:100%;">
 </div>
 
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/04.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/05" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/06" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/07.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/08.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/09.gif" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/10" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/11.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/12.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/13.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/14" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/15" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/16" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/17" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/18" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/19" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/20" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/21" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/22" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/23.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/24.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/25.jpg" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/26" style="width:100%;">
+</div>
+
+<div class="mySlides fade">
+  <img src="billeder/heaveyblankets/baggrund/27" style="width:100%;">
+</div>
+
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
 
 <script>
