@@ -191,3 +191,16 @@ input[type=submit]:hover {
 .doc_img {
   width: 100%;
 }
+
+.HBmail {
+  left: 49.3%;
+  top: 62.5%;
+  position: absolute;
+  z-index: 4;
+}
+
+.plantegning {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
