@@ -196,11 +196,64 @@ input[type=submit]:hover {
   left: 49.3%;
   top: 62.5%;
   position: absolute;
-  z-index: 4;
+  z-index: 40;
 }
 
 .plantegning {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   width: 100%;
+}
+
+
+.container3 {
+  top:5%;
+  padding-left:47%;
+  z-index: 20;
+  position: absolute;
+  width: 80%;
+}
+
+
+// Play/Pause Button
+.togglePlay {
+  font:0/0 a;
+  background: #006B5A;
+  color:transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid darken(#006B5A, 10%);
+  cursor: pointer;
+  transition: transform 150ms ease-out;
+  
+  &:after {
+    box-sizing: border-box;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    border-color: transparent;
+    border-style: solid;
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-left-width: 19px;
+    border-left-color: rgba(255,255,255,0.9);
+  }
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+  &.active{
+    &:after {
+      width: 21px;
+      height: 26px;
+      margin-left: 0;
+      border-width:0 7px;
+      border-color: rgba(255,255,255,0.9);
+    }
+  }
 }

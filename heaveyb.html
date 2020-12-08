@@ -33,6 +33,7 @@
     });
   </script>
 
+
 <style>
 * {box-sizing: border-box}
 body
@@ -123,6 +124,75 @@ img {vertical-align: middle;}
   </ul>
 </div>
 
+<div class="container3">
+  <div class="progress" id="progress"></div>
+  <audio id="audio" src="billeder/heaveyblankets/babybingen.mp3"></audio>
+  <button class="togglePlay" onClick="togglePlay()">Play</button>
+</div>
+
+<script>
+
+var timer;
+var percent = 0;
+var audio = document.getElementById("audio");
+audio.addEventListener("playing", function(_event) {
+  var duration = _event.target.duration;
+  advance(duration, audio);
+});
+audio.addEventListener("pause", function(_event) {
+  clearTimeout(timer);
+});
+var advance = function(duration, element) {
+  var progress = document.getElementById("progress");
+  increment = 10/duration
+  percent = Math.min(increment * element.currentTime * 10, 100);
+  progress.style.width = percent+'%'
+  startTimer(duration, element);
+}
+var startTimer = function(duration, element){ 
+  if(percent < 100) {
+    timer = setTimeout(function (){advance(duration, element)}, 100);
+  }
+}
+
+function togglePlay (e) {
+  e = e || window.event;
+  var btn = e.target;
+  if (!audio.paused) {
+    btn.classList.remove('active');
+    audio.pause();
+    isPlaying = false;
+  } else {
+    btn.classList.add('active');
+    audio.play();
+    isPlaying = true;
+  }
+}
+
+</script>
+
+<div class="plantegning">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 -415 1920 1080" style="enable-background:new 0 -415 1920 1080;" xml:space="preserve">
+<style type="text/css">
+    .st0{fill:grey;fill-opacity:0.0}
+    .st0:hover{fill:#3F7CCB;fill-opacity:0.3}
+</style>
+<image style="overflow:visible;" width="1920" height="1277" xlink:href="../../GitHub/bremerstent.github.io/billeder/heaveyblankets/pp.png"  transform="matrix(0.8435 0 0 0.8435 145.2772 -415)">
+</image>
+<a xlink:href="billeder/heaveyblankets/presse.jpg" >
+  <rect id="XMLID_3_" x="1076.9" y="485.1" class="st0" width="53.1" height="77.9"/>
+</a>
+<a xlink:href="billeder/heaveyblankets/plan.jpg" >
+  <rect id="XMLID_2_" x="772" y="482.3" class="st0" width="57.5" height="81.4"/>
+</a>
+</svg>
+
+</div>
+
+
  <div class="HBmail">
 <form method="GET" action="mailto:tbremerstent@gmail.com" enctype="text/plain">
     <input type="text" name="subject" style=" width: 100%; opacity: 5%"/>
@@ -130,30 +200,6 @@ img {vertical-align: middle;}
 </form>
 </div>
 
-<div class="plantegning" >
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<div class="exh-wrapper">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:grey;fill-opacity:0.0}
-    .st0:hover{fill:#3F7CCB;fill-opacity:0.3}
-</style>
-
-<image style="overflow:visible;" width="6016" height="4000" id="XMLID_7_" xlink:href="billeder/revengeisadish/planpresse.png"  transform="matrix(0.3053 0 0 0.3053 22.5319 -70.684)">
-</image>
-
-<a xlink:href="billeder/revengeisadish/presse.jpg" >
-  <rect id="XMLID_1_" x="1609.1" y="263.7" class="st0" width="60.9" height="86.6"/>
-</a>
-<a xlink:href="billeder/revengeisadish/plan.jpg" >
-  <rect id="XMLID_2_" x="1609.1" y="367.6" class="st0" width="60.9" height="86.6"/>
-</a>
-
-</svg>
-</div>
-</div>
 
 
 <div class="slideshow-container">
