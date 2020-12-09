@@ -205,6 +205,11 @@ input[type=submit]:hover {
   width: 100%;
 }
 
+.plantegning:hover{
+  fill:#3F7CCB;
+  fill-opacity:0.3;
+}
+
 
 .container3 {
   top:5%;
