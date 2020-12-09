@@ -193,10 +193,11 @@ input[type=submit]:hover {
 }
 
 .HBmail {
-  left: 49.3%;
-  top: 62.5%;
+  left: 48.5%;
+  top: 60%;
   position: absolute;
   z-index: 40;
+  vertical-align:top;
 }
 
 .plantegning {
