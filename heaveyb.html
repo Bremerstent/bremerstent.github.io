@@ -49,14 +49,15 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  margin: 50px
+  top: 0%;
+  margin: 0px
   width: auto;
-  color: rgba(0, 0, 0, 0.2);
-  font-size: 40px;
+  color: rgba(0, 0, 0, 0.0);
+  height: 100%;
+  width: 100%;
   user-select: none;
 }
 
@@ -64,10 +65,6 @@ img {vertical-align: middle;}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 /* Fading animation */
@@ -129,7 +126,7 @@ img {vertical-align: middle;}
 <div class="container3">
   <div class="progress" id="progress"></div>
   <audio id="audio" src="billeder/heaveyblankets/babybingen.mp3"></audio>
-  <button class="togglePlay" onClick="togglePlay()">Play</button>
+  <button style="z-index: 2" class="togglePlay" onClick="togglePlay()">Play</button>
 </div>
 
 <script>
@@ -178,11 +175,11 @@ function togglePlay (e) {
 <div class="exh-wrapper">
 
 <a href="billeder/heaveyblankets/plan.jpg">
- <img style="position: absolute; height: 60px; top: 28%; left: 84%" src="billeder/heaveyblankets/plan.jpg"/>
+ <img style="position: absolute; height: 60px; top: 28%; left: 84%; box-shadow: 2px 2px 25px grey" src="billeder/heaveyblankets/plan.jpg"/>
 </a>
 
 <a href="billeder/heaveyblankets/presse.jpg">
- <img style="position: absolute; height: 60px; top: 40%; left: 84%; box-shadow: 2px 2px 30px black" src="billeder/heaveyblankets/presse.jpg"/>
+ <img style="position: absolute; height: 60px; top: 40%; left: 84%; box-shadow: 2px 2px 25px grey" src="billeder/heaveyblankets/presse.jpg"/>
 </a>
 
 </div>
@@ -299,7 +296,6 @@ function togglePlay (e) {
   <img src="billeder/heaveyblankets/baggrund/27" style="width:100%;">
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
