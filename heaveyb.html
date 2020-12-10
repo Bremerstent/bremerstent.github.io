@@ -18,7 +18,7 @@
     jQuery(document).ready(function(e) {
       jQuery(".exh-wrapper a").on("click", function(e) {
         e.preventDefault(); 
-        $href = e.currentTarget.getAttribute("xlink:href")
+        $href = e.currentTarget.getAttribute("href")
         jQuery(".imageLightbox").fadeIn(399);
         jQuery(".imageLightbox").css("display", "flex");
 
@@ -178,18 +178,13 @@ function togglePlay (e) {
 <div class="exh-wrapper">
 
 <a href="billeder/heaveyblankets/plan.jpg">
- <img style="position: absolute; height: 70px; top: 600px; left: 40% " src="billeder/heaveyblankets/plan.jpg"/>
+ <img style="position: absolute; height: 60px; top: 28%; left: 84%" src="billeder/heaveyblankets/plan.jpg"/>
 </a>
 
-</div>
+<a href="billeder/heaveyblankets/presse.jpg">
+ <img style="position: absolute; height: 60px; top: 40%; left: 84%; box-shadow: 2px 2px 30px black" src="billeder/heaveyblankets/presse.jpg"/>
+</a>
 
-<!-- submit/mail box, skal designes, måske så den sender mail dirkete og ikke åber program hvis muligt.-->
-
- <div class="HBmail">
-<form method="GET" action="mailto:tbremerstent@gmail.com" enctype="text/plain">
-    <input type="text" name="subject" style=" width: 290px; height: 60px; opacity: 65%; background-color: white; color:black"/>
-    <input type="submit" value="Order" style="background: blue; opacity: 50%;"/>
-</form>
 </div>
 
 <!-- slide show kun next ved tryk hvem end på billedet eller små gennemsigte pile-->

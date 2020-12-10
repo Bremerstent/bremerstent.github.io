@@ -197,7 +197,6 @@ input[type=submit]:hover {
   top: 60%;
   position: absolute;
   z-index: 40;
-  vertical-align:top;
 }
 
 .plantegning {
@@ -215,7 +214,7 @@ input[type=submit]:hover {
 .container3 {
   top:5%;
   padding-left:47%;
-  z-index: 20;
+  z-index: 2;
   position: absolute;
   width: 80%;
 }
