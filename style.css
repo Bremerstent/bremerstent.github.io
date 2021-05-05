@@ -217,3 +217,14 @@ input[type=submit]:hover {
   position: absolute;
   width: 80%;
 }
+
+.dolly {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+#dollycontrol {
+background:rgba(255,255,255, 0.6);; 
+}
+
