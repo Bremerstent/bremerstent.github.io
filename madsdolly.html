@@ -108,15 +108,18 @@
 <script src="https://player.vimeo.com/api/player.js"></script>
 
 <script>
-  
-var iframe = document.getElementById('bgVideo'); 
-var player = new Vimeo.Player(iframe);
+setTimeout({ 
+  var iframe = document.getElementById('bgVideo'); 
+  var player = new Vimeo.Player(iframe);
 
-player.pause(); 
-  
-function startVideo() {
-  setTimeout(player.start(), 500); // Wierd bug in chrome: https://stackoverflow.com/questions/51001654/vimeo-javascript-api-player-play-not-playing
-}
+  player.pause(); 
+
+  function startVideo() {
+
+    player.start();
+
+  }
+}, 500); 
 
 </script>
   
