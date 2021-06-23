@@ -94,7 +94,7 @@
   </ul>
 </div>
 
-<input value="Enter the gallery" type="button" onclick="startVideo()" style="position: absolute; width: 150px; height: 45px; left: 50%; top: 50%; margin-left: -75px; margin-top: -22px;">
+<input id="startBgVideo" value="Enter the gallery" type="button" onclick="startVideo()" style="position: absolute; width: 150px; height: 45px; left: 50%; top: 50%; margin-left: -75px; margin-top: -22px;">
 <div  class="vimeo-wrapper">
     <iframe id="bgVideo" src="https://player.vimeo.com/video/564950513?controls=0" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   <!-- old iframe
@@ -111,12 +111,23 @@
   var iframe = document.getElementById('bgVideo'); 
   var player = new Vimeo.Player(iframe);
 
-  player.pause(); 
+  var videoBtn = document.getElementById('startBgVideo');
 
-  function startVideo() {
+  videoBtn.onclick = function() { vimeoPlay() }
 
-    player.start();
-
+  function vimeoPlay(){
+    player.play().then(function(){
+    })
+    .catch(function(error) {
+        switch (error.name) {
+            case 'PasswordError':
+                break;
+            case 'PrivacyError':
+                break;
+            default:
+                break;
+        }
+    });
   }
 
 
@@ -146,5 +157,3 @@
 
 </body>
 </html>
-
-
