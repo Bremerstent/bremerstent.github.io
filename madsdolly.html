@@ -95,19 +95,34 @@
 </div>
 
 
-<div class="vimeo-wrapper">
-   <iframe id="bgVideo" src="https://player.vimeo.com/video/564950513?background=1&quality=1080p=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<div id="bgVideo" class="vimeo-wrapper">
 </div>
+  
+  <!-- old iframe -->
+  <!--   <iframe id="bgVideo" src="https://player.vimeo.com/video/564950513?background=1&quality=1080p=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+
 
 <!-- VIMEO PLAYER - ADD SOUND ON AUTOPLAY -->
 <!-- call Vimeo API -->  
 <script src="https://player.vimeo.com/api/player.js"></script>
 
 <script>
-
-var iframe = document.getElementById('bgVideo');
-
-var player = new Vimeo.Player(iframe);
+  
+  
+  var options = {
+    id: 564950513,
+    background: 1,
+    quality: 1080,
+    loop: 1,
+    byLine: 0,
+    title: 0,
+    setVolume: 0,
+    webkitallowfullscreen: 1,
+    mozallowfullscreen: 1,
+    allowfullscreen: 1
+  }
+  
+var player = new Vimeo.Player("bgVideo", options);
 
 
 player.on('timeupdate', set_autoplay_volume );
