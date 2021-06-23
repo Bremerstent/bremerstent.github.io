@@ -16,6 +16,9 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script>
     jQuery(document).ready(function(e) {
+      
+      // IFRAME ADD SOUND ON AUTOPLAY
+    
       // IF AUDIO - PLAY IT ON START
       // You have to set the class of it-audio-auto-play on the audio HTML-tag for this to work
       if( $(".it-audio-auto-play").length > 0 ) {
@@ -93,8 +96,29 @@
 
 
 <div class="vimeo-wrapper">
-   <iframe src="https://player.vimeo.com/video/564950513?background=1&quality=1080p=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   <iframe id="bgVideo" src="https://player.vimeo.com/video/564950513?background=1&quality=1080p=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
+
+<!-- VIMEO PLAYER - ADD SOUND ON AUTOPLAY -->
+<!-- call Vimeo API -->  
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+<script>
+
+var iframe = document.getElementById('bgVideo');
+
+var player = new Vimeo.Player(iframe);
+
+
+player.on('timeupdate', set_autoplay_volume );
+
+function set_autoplay_volume(){
+    player.setVolume(1);
+}
+
+</script>
+  
+<!-- VIMEO PLAYER -->
 
 
 <?xml version="1.0" encoding="utf-8"?>
