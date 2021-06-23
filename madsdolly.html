@@ -113,7 +113,10 @@
 
   var videoBtn = document.getElementById('startBgVideo');
 
-  videoBtn.onclick = function() { vimeoPlay() }
+  videoBtn.onclick = function() { 
+    vimeoPlay();
+    videoBtn.remove();
+  }
 
   function vimeoPlay(){
     player.play().then(function(){
