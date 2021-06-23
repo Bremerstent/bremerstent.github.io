@@ -96,6 +96,7 @@
 
 
 <div  class="vimeo-wrapper">
+    <input value="Enter the gallery" type="button" onclick="startVideo()" style="position: absolute; width: 150px; height: 45px; left: 50%; top: 50%; margin-left: -75px; margin-top: -22px;">
     <iframe id="bgVideo" src="https://player.vimeo.com/video/564950513?background=1&quality=1080p=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
  
@@ -109,10 +110,11 @@
 var iframe = document.getElementById('bgVideo'); 
 var player = new Vimeo.Player(iframe);
 
-player.on('timeupdate', set_autoplay_volume );
-
-function set_autoplay_volume(){
-    player.setVolume(1);
+player.pause(); 
+  
+function startVideo() {
+  player.start();
+  player.setVolume(1)
 }
 
 </script>
