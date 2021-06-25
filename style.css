@@ -7,7 +7,7 @@ html, body {
 
 @media only screen and (max-width: 700px) {
   body:after {
-    content: "Please use a bigger screen than 700 pixel to enter the gallery";
+    content: "To get the full experience of the exibithion you need to use a screen bigger than 700 pixel. Watch Dolly here: https://vimeo.com/564950513/87486e24e9";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ html, body {
 }
 
 body {
-    background-image: url("billeder/sky baggrund.jpg");
+    background-image: url("billeder/dolly baggrund.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -225,7 +225,7 @@ input[type=submit]:hover {
    width: 100%;
    height: 100%;
    z-index: -1;
-   pointer-events: none;
+   pointer-events: auto; /* none */
    overflow: hidden;
 }
 .vimeo-wrapper iframe {
