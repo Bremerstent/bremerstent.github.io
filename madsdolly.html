@@ -76,7 +76,7 @@
   .dolly {
   position: absolute; 
   width: 150px; 
-  height: 45px; 
+  height: 70px; 
   left: 50%; 
   top: 50%; 
   margin-left: -75px; 
@@ -84,13 +84,14 @@
   color: blue; 
   font-size: 15px; 
   border-color: white;
+  text-align:center;
+  white-space: normal;
   }
 
   .dolly:hover{
   background-color: rgba(120,120,120, 0.4);
   border-color:  rgba(190,190,190, 0.4);
   cursor: grab;
-  cursor:  
 }
 
 
@@ -119,7 +120,7 @@
   </ul>
 </div>
 
-<input id="startBgVideo" value="Enter the gallery" type="button" onclick="startVideo()" class="dolly" >
+<input id="startBgVideo" value="------ ENTER ------ It's recommended to use full screen" type="button" onclick="startVideo()" class="dolly">
 <div  class="vimeo-wrapper">
     <iframe id="bgVideo" src="https://player.vimeo.com/video/564950513?controls=0" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   <!-- old iframe
