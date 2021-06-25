@@ -5,7 +5,7 @@ html, body {
     min-height: 100%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px)
   body:after {
     content: "To get the full experience of the exibithion you need to use a screen bigger than 700 pixel. Watch Dolly here: https://vimeo.com/564950513/87486e24e9";
     display: flex;
