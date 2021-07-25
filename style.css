@@ -43,7 +43,7 @@ html, body {
 }
 
 body {
-    background-image: url("billeder/dolly baggrund.jpg");
+    background-image: url("billeder/sky baggrund.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -237,4 +237,10 @@ input[type=submit]:hover {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+}
+
+.container4 {
+  top:57%;
+  left:84.3%;
+  position: absolute;
 }
