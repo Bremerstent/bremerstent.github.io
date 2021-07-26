@@ -52,7 +52,7 @@
         // REMOVE LIGHTBOX
         jQuery(".imageLightbox").on("click", function(a) {
           // IF ANY AUDIO START IT AGAIN
-          if( $('audio').length > 0 ) {
+          if( $('audio').length > 1 ) {
             $('audio').each(function(){
                 this.play(); 
             }); 
