@@ -7,7 +7,7 @@ html, body {
 
 @media only screen and (max-width: 700px) {
   body:after {
-    content: "To get the full experience of the exibithion you need to use a screen bigger than 700 pixel. Watch Dolly here: https://vimeo.com/564950513/87486e24e9";
+    content: "To get the full experience of the exibithion you need to use a screen bigger than 700 pixel. Or flip Phone (if you have a big one)";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,11 +42,11 @@ html, body {
   width: auto;
 }
 
-body {
+body {gamle baggrund}
     background-image: url("billeder/sky baggrund.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
 }
 
 .maillink {
@@ -231,7 +231,7 @@ input[type=submit]:hover {
 .vimeo-wrapper iframe {
    width: 100vw;
    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-   min-height: 100vh;
+   min-height: 1000vh;
    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
    position: absolute;
    top: 50%;
