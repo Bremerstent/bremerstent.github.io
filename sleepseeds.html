@@ -169,6 +169,10 @@ img {vertical-align: middle;}
   opacity:0.6
 }
 
+.flex {
+  display: flex;
+}
+
 </style>
 
 </head>
@@ -283,14 +287,14 @@ function onClick(element) {
 }
 </script>
 
-<div style="height: 100%;">
-  <img src="billeder/sleepseeds/Degrer1.jpg" style="position: absolute; width: 33vw; top: 55vw; left: 12%">
+<div class="flex">
+  <img src="billeder/sleepseeds/Degrer1.jpg" style="position: absolute; width: 33vw; top: 55vw; left: 12vw">
 
-  <img src="billeder/sleepseeds/Degrer2.jpg" style="position: absolute; width: 33vw; top: 55vw; left: 54%;">
+  <img src="billeder/sleepseeds/Degrer2.jpg" style="position: absolute; width: 33vw; top: 55vw; left: 54vw;">
 
 <input id="startBgVideo" value=" ------ ENTER ------ " type="button" onclick="startVideo()" class="seeds">
 
-<iframe id="bgVideo" style="position: absolute; top:112vw; left:12%; padding-bottom: 50px;"src="https://player.vimeo.com/video/591619824?h=a278ef3d73?controls=1" width="960" height="540" frameborder="0" allow="autoplay; fullscreen"></iframe>
+<iframe id="bgVideo" style="position: absolute; top:112vw; left:12vw; padding-bottom: 50px;"src="https://player.vimeo.com/video/591619824?h=a278ef3d73?controls=1" width="960" height="540" frameborder="0" allow="autoplay; fullscreen"></iframe>
 </div>
 
 <!-- VIMEO PLAYER - ADD SOUND ON AUTOPLAY -->
