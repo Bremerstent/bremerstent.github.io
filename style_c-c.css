@@ -205,7 +205,7 @@ filter: drop-shadow(5px 5px 5px #fff);
 
 
 body {
-  background-image: url("billeder/baggrundlys.jpg");
+  background-image: url("billeder/lightsandspaces/baggrundlys.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -230,7 +230,7 @@ body {
 }
 
 body {gamle baggrund}
-    background-image: url("billeder/baggrundlys.jpg");
+    background-image: url("billeder/lightsandspaces/baggrundlys.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
