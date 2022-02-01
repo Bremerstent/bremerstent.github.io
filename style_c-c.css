@@ -1,7 +1,7 @@
 @font-face {
   font-family: "L15-RegularWide";
-  src: url("./fonts/L15-RegularWide.woff2") format("woff2"),
-       url("./fonts/L15-RegularWide.woff") format("woff");
+  src: url("billeder/lightsandspaces/fonts/L15-RegularWide.woff2") format("woff2"),
+       url("billeder/lightsandspaces/fonts/L15-RegularWide.woff") format("woff");
 }
 .outer-wrap {
   position: absolute;
