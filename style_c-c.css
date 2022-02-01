@@ -86,6 +86,9 @@ html, body {
   border-style: solid;
   border-width: 0;
   transform: perspective(599px) rotateY(39deg) rotate(0deg);
+  -webkit-transform: perspective(599px) rotateY(39deg) rotate(0deg);
+  -moz-transform: perspective(599px) rotateY(39deg) rotate(0deg);
+
   -webkit-text-stroke-color: #F94F28;
   // animation: pulsate_two 3.5s infinite alternate;
   -webkit-filter: drop-shadow(-5px 0px 1px rgba(0,0,0, 0.3));
@@ -138,8 +141,18 @@ html, body {
     background-size: auto;
     background-size: contain;
     perspective: 600px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
     perspective-origin: -35% 8%;
+    -webkit-perspective-origin: -35% 8%;
+    -moz-perspective-origin: -35% 8%;
+
+
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+
+
     backface-visibility: hidden;
 }
 
@@ -177,12 +190,22 @@ letter-spacing: 1px;
 -webkit-text-stroke-width: .06vw;
 -webkit-text-stroke-color: #FFF;
 transform: rotate(0.5deg) perspective(123px) rotateY(-6deg) rotateX(-1deg);
+-webkit-transform: rotate(0.5deg) perspective(123px) rotateY(-6deg) rotateX(-1deg);
+-moz-transform: rotate(0.5deg) perspective(123px) rotateY(-6deg) rotateX(-1deg);
+
 transform-origin: 79px 71px;
+-webkit-transform-origin: 79px 71px;
+-moz-transform-origin: 79px 71px;
 transform-style: preserve-3d;
+-webkit-transform-style: preserve-3d;
+-moz-transform-style: preserve-3d;
 width: 100%;
 }
+
 #Layer_1 {
 filter: brightness(50%);
+-webkit-filter: brightness(50%);
+
 animation: pulsate_two 3.5s infinite alternate;
 }
 
@@ -229,7 +252,7 @@ body {
   width: auto;
 }
 
-body {gamle baggrund}
+body {
     background-image: url("billeder/lightsandspaces/baggrundlys.jpg");
     background-size: cover;
     background-repeat: no-repeat;
