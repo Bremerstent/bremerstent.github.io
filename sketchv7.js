@@ -1,16 +1,5 @@
 /* eslint-disable no-undef, no-unused-vars */
 
-//case for dumb, semi-stochastic process or
-// cosmic background radiation
-
-//canvas burde inherit div size
-//disable Friendly Error System for å få meir fpsS
-
-//lage meir dynamisk brush
-// når den går til t.d endeprikk, eller prikk 100 eller whatev
-//gå tilbake til prikk 1 og stopp,
-//synke brush
-//curvevertex istadenfor linje
 
 p5.disableFriendlyErrors = true; // disables FES
 
@@ -48,7 +37,7 @@ function setup() {
     startY: height / 20,
     grenseX: width / 4,
     grenseY: height / 4,
-    lengde: 300,
+    lengde: 100,
 
     //bevegelse i X og Y
     spdX: 30,
