@@ -1,60 +1,10 @@
-html, body {
+
+  html, body {
     width: 100%;
     margin: 0;
     padding: 0;
     min-height: 100%;
 }
-
-@media only screen and (max-width: 700px) {
-  body:after {
-    content: "To get the full experience of the exibithion you need to use a screen bigger than 700 pixel. Or flip Phone (if you have a big one)";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: fixed; /* could also be absolute */ 
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 10;
-    color: white;
-    background-color: none;
-    background: linear-gradient(0deg, rgba(106,166,219,1) 0%, rgba(25,85,184,1) 100%);
-  }
-}
-
-.imageLightbox {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  background: rgba(255,255,255, 0.6);
-  z-index: 5;
-}
-
-.imageLightbox img {
-  max-height: 100%;
-  width: auto;
-}
-
-body {gamle baggrund}
-    background-image: url("billeder/sky baggrund.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.maillink {
-    text-decoration: none;
-}
-  .maillink:hover {
-    text-decoration: underline;
-  }
 
 .LH {
   left: 17px;
@@ -62,6 +12,7 @@ body {gamle baggrund}
   position: fixed;
   z-index: 100;
 }
+
 
 .menu {
   list-style-type: none;
@@ -73,7 +24,7 @@ body {gamle baggrund}
 .menu li a { 
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 12px;
 }
@@ -102,6 +53,9 @@ body {gamle baggrund}
   color: white;
   width: 620px;
   font-size: 14px;
+  background-image:url("img/lh_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
   
   .container img {
@@ -146,7 +100,7 @@ body {gamle baggrund}
 .email {
   width: 25%;
   padding: 4px;
-  font-size  
+
 }
 
 .textart {
@@ -161,86 +115,17 @@ body {gamle baggrund}
   background-color: rgba(255,255,255, 0.1);    
 }
 
-input[type=text], input[type=submit] {
-  width: 18%;
-  padding: 6px;
-  margin: 4px 0;
-  display: inline-block;
-  box-sizing: border-box;-box;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-}
 
-input[type=submit]:hover {
-  opacity: 0.8;
+/*
+canvas {
+  display: block;
+  background-image:url("img/lh_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-
-#yowl {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-}
-
-#player {
- width: 20%;
- padding-left: 40%;
- opacity: 20%;
-}​
-
-.doc_img {
-  width: 100%;
-}
-
-.HBmail {
-  left: 48.5%;
-  top: 60%;
-  position: absolute;
-  z-index: 40;
-}
-
-.plantegning {
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-}
-
-.plantegning:hover{
-  fill:#3F7CCB;
-  fill-opacity:0.3;
-}
+*/
 
 
-.container3 {
-  top:5%;
-  padding-left:47%;
-  position: absolute;
-  width: 80%;
-}
 
-.vimeo-wrapper {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: -1;
-   pointer-events: auto; /* none */
-   overflow: hidden;
-}
-.vimeo-wrapper iframe {
-   width: 100vw;
-   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-   min-height: 1000vh;
-   min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
 
-.container4 {
-  top:57%;
-  left:84.3%;
-  position: absolute;
-}
+
